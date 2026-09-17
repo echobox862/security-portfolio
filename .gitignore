@@ -1,0 +1,43 @@
+# ===== 通用 =====
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.conda/
+
+# ===== 敏感信息（重要！）=====
+# 凭据、配置、结果一律不进仓库
+*.env
+.env.*
+config.local.*
+*credentials*
+*token*
+*secret*
+# 扫描/爆破结果（可能含真实目标信息）
+results/
+output/
+*.pcap
+*.har
+
+# ===== 靶场与样本目录（本地练习用，不发布）=====
+labs/
+targets/
+payloads/
+samples/
+*.php
+*.jsp
+*.asp
+*.aspx
+
+# 说明：上面按后缀排除脚本文件，是防止误把 webshell 样本提交上去。
+# 如果你确实要公开某个脚本示例，用 git add -f 显式添加，并先确认它不含可用后门。
