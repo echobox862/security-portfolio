@@ -1,0 +1,11 @@
+# 统一换行符为 LF，避免同一仓库里混入 CRLF 造成无意义的整文件 diff
+*.md    text eol=lf
+*.txt   text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+
+# 二进制文件不做换行符转换
+*.png   binary
+*.jpg   binary
+*.pdf   binary
